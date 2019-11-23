@@ -40,14 +40,23 @@ function groupAlbumsById (result) {
 function addArticleHtml (container, albums) {
 
     $.each(albums, function (i, images) {
+        var price = parseFloat(parseFloat(
+                    Math.floor(Math.random() * (100 - 1 + 1) + 1)
+                    ).toFixed(2));
+        var tax = 18*100;
+        var commission = parseFloat(parseFloat((price*100) / tax).toFixed(2));
+        var shipping = parseFloat(parseFloat(5).toFixed(2));
+        var totalPrice = price + commission + shipping;
+        totalPrice = parseFloat(parseFloat(totalPrice).toFixed(2));
+
         var articleHtml = 
         '<article class="wrapper-article bg-gray">' + 
             '<div class="header-article">' + 
                 'Albúm N° ' + i + '<br>' + 
-                'Precio del Albúm: S/. 200 <br>' +
-                'Impuesto: S/. 18 <br>' + 
-                'Costo de envío: S/. 5.00 <br>' + 
-                '<strong>TOTAL A PAGAR: S/. 300 </strong>' +
+                'Precio del Albúm: S/. '+ price +' <br>' +
+                'Impuesto (18%): S/.' + commission + ' <br>' + 
+                'Costo de envío: S/. '+ shipping +'<br>' + 
+                '<strong>TOTAL A PAGAR: S/. '+ totalPrice +' </strong>' +
             '</div>' + 
             '<div class="body-article">';
 
