@@ -1,7 +1,7 @@
 .bg-gray {
     background-color: #D9D9D9;
 }
-.title-h2 {
+.title-h2, .title-h3 {
     color: #000000
 }
 .bg-aquamarine {
@@ -10,7 +10,7 @@
 .bullet.b-yellow {
     background-color: #FEFE20;
 }
-.bullet.b-green, .bg-green {
+.bullet.b-green {
     background-color: #A2D719;
 }
 .bullet.b-gold {
@@ -40,4 +40,6 @@
 .bg-dark-orange {
     background-color: #F54817;
 }
-
+.bg-light-green {
+    background-color: #95DC65;
+}
