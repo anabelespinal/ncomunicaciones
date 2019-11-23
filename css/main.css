@@ -87,6 +87,24 @@ header {
 footer {
     padding: 6px 10px 10px 10px;
 }
+.wrapper-article article {
+    margin-bottom: 20px;
+    padding: 15px;
+    width: auto;
+}
+.header-article {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.body-article {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.body-article figure {
+    padding: 5px;
+}
 
 @media only screen and (max-width: 900px) {
     .hide-mobile {
